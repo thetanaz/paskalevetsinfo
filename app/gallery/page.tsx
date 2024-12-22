@@ -3,7 +3,7 @@ import SingleAlbum from "@/components/SingleAlbum";
 import { fetchAlbumNames } from "@/fetchers/fetchAlbumNames";
 import { Suspense } from "react";
 
-export const revalidate = 60;
+export const revalidate = 600;
 const Page = async () => {
   const albumNames = await fetchAlbumNames();
 
