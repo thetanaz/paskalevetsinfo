@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import ScrollToTop from "./ScrollToTop";
 
 interface TimelineEvent {
   year: number;
@@ -110,6 +111,7 @@ export default function Timeline() {
           />
         </section>
       ))}
+      <ScrollToTop />
     </div>
   );
 }
