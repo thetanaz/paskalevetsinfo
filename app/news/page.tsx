@@ -1,4 +1,10 @@
+import Title from "@/components/Title";
+
 const Page = () => {
-  return <div>Новини</div>;
+  return (
+    <div>
+      <Title>Новини</Title>
+    </div>
+  );
 };
 export default Page;

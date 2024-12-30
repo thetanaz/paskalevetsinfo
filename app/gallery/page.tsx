@@ -1,5 +1,6 @@
 import EmblaFallback from "@/components/EmblaFallback";
 import SingleAlbum from "@/components/SingleAlbum";
+import Title from "@/components/Title";
 import { fetchAlbumNames } from "@/fetchers/fetchAlbumNames";
 import { Suspense } from "react";
 
@@ -8,7 +9,8 @@ const Page = async () => {
   const albumNames = await fetchAlbumNames();
 
   return (
-    <>
+    <div className="flex flex-col">
+      <Title>Галерия</Title>
       <div className="lg:grid lg:grid-cols-2 xl:grid-cols-3 flex flex-col justify-center items-center gap-y-2 container mx-auto mt-5 gap-x-2 lg:px-4">
         {albumNames.map((albumName, index) => (
           <div
@@ -24,7 +26,7 @@ const Page = async () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

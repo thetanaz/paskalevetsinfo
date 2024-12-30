@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${oswald.className} flex flex-col min-h-screen antialiased bg-green-900 text-white`}
+        className={`${oswald.className} flex flex-col min-h-screen h-full antialiased bg-green-900 text-white`}
       >
         <SnowfallComponent />
 
