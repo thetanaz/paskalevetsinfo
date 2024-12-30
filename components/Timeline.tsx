@@ -74,7 +74,7 @@ export default function Timeline() {
           key={event.year}
           className="relative min-h-[50vh] flex items-center "
         >
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto md:p-4 px-2">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
