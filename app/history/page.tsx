@@ -1,5 +1,10 @@
 import Timeline from "@/components/Timeline";
 import Title from "@/components/Title";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Паскалевец - История",
+};
 
 const Page = () => {
   return (

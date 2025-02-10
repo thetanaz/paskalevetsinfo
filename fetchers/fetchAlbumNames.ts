@@ -26,14 +26,14 @@ export const fetchAlbumNames = async (): Promise<string[]> => {
         "Content-Type": "application/json",
       },
     });
-    console.log(res);
+
     if (!res.ok) {
       throw new Error(`Error: ${res.status} - ${res.statusText}`);
     }
 
     const data = await res.json(); // Parse the response JSON
     const folders = data.folders.map((folder: { name: string }) => folder.name);
-    console.log("fetched"); // Extract folder names
+    // Extract folder names
     return folders;
   } catch (error) {
     console.error("Failed to fetch album names:", error);

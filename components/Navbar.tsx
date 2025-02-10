@@ -27,9 +27,7 @@ export default function Navbar() {
           <Link href="/" className={buttonVariants({ variant: "default" })}>
             Начало
           </Link>
-          <Link href="/news" className={buttonVariants({ variant: "default" })}>
-            Новини
-          </Link>
+
           <Link
             href="/history"
             className={buttonVariants({ variant: "default" })}
@@ -41,6 +39,9 @@ export default function Navbar() {
             className={buttonVariants({ variant: "default" })}
           >
             Галерия
+          </Link>
+          <Link href="/qna" className={buttonVariants({ variant: "default" })}>
+            Въпроси и Отговори
           </Link>
           <Link
             href="/contact"
@@ -61,9 +62,9 @@ export default function Navbar() {
         </div>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger>
-            <Menu className="w-[30px] h-[30px] p-[5px] text-green-900" />
+            <Menu className="w-[40px] h-[40px] p-[5px] text-green-900" />
           </SheetTrigger>
-          <SheetContent className="w-screen h-[310px]">
+          <SheetContent className="w-screen h-[350px]">
             <SheetTitle className="text-center mb-2 font-medium tracking-wider text-xl">
               МЕНЮ
             </SheetTitle>
@@ -75,13 +76,7 @@ export default function Navbar() {
               >
                 Начало
               </Link>
-              <Link
-                href="/news"
-                onClick={handleClose}
-                className={buttonVariants({ variant: "default" })}
-              >
-                Новини
-              </Link>
+
               <Link
                 href="/history"
                 onClick={handleClose}
@@ -95,6 +90,13 @@ export default function Navbar() {
                 className={buttonVariants({ variant: "default" })}
               >
                 Галерия
+              </Link>
+              <Link
+                href="/qna"
+                onClick={handleClose}
+                className={buttonVariants({ variant: "default" })}
+              >
+                Въпроси и Отговори
               </Link>
               <Link
                 href="/contact"
