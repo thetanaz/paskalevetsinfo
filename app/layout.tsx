@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Oswald } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const oswald = Oswald({
   subsets: ["cyrillic", "latin"],
@@ -22,6 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Analytics />
       <body
         className={`${oswald.className} flex flex-col min-h-screen h-full antialiased bg-green-900 text-white`}
       >
