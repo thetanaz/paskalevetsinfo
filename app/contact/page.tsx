@@ -18,7 +18,10 @@ const Page = () => {
             className="rounded-md max-w-[400px]"
           />
           <h2 className="text-xl flex flex-col font-bold">
-            Кметство <p>тел. 061395220</p>
+            Кметство{" "}
+            <a href="tel:061395220" className="">
+              тел. 061395220
+            </a>
           </h2>
         </div>
 
@@ -29,7 +32,8 @@ const Page = () => {
             className="rounded-md max-w-[400px]"
           />
           <h2 className="text-xl flex flex-col font-bold">
-            Кмет - Мирослав Димитров <p>тел. 0894506130</p>
+            Кмет - Мирослав Димитров{" "}
+            <a href="tel:0894506130">тел. 0894506130</a>
           </h2>
         </div>
 
@@ -43,7 +47,7 @@ const Page = () => {
           <h2 className="text-xl flex flex-col font-bold">
             Читалище
             <div className="flex justify-between items-end w-full mb-1">
-              <p>тел. 0889416863</p>
+              <a href="tel:0889416863">тел. 0889416863</a>
               <p>
                 email:{" "}
                 <Link
