@@ -32,7 +32,7 @@ const Page = () => {
             className="rounded-md max-w-[400px]"
           />
           <h2 className="text-xl flex flex-col font-bold">
-            Кмет - Мирослав Димитров{" "}
+            Кметски наместник - Мирослав Димитров{" "}
             <a href="tel:0894506130">тел. 0894506130</a>
           </h2>
         </div>
