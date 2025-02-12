@@ -10,7 +10,7 @@ const Page = () => {
   return (
     <>
       <Title>Контакти</Title>
-      <div className="flex flex-col my-2 gap-y-5 items-center xl:flex-row xl:gap-x-5 xl:justify-center xl:items-end">
+      <div className="flex flex-col my-2 gap-y-5 items-center overflow-x-hidden xl:flex-row xl:gap-x-5 xl:justify-center xl:items-end">
         <div className="flex p-2 flex-col gap-y-4 border rounded-md w-[400px]">
           <img
             src="https://res.cloudinary.com/dwshro2zn/image/upload/v1739190318/kmetstvo_inftvx.jpg"
