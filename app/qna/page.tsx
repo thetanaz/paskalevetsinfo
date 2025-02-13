@@ -27,9 +27,8 @@ const page = () => {
           <div className="border-b  border-b-green-900 w-full" />
           <h2>
             <span className="font-extralight">Отговор: </span>
-            Според закона едно населено място трябва да има поне 350 жители за
-            да се провеждат избори за кмет, а Паскалевец пада далеч под този
-            праг.{" "}
+            Според закона едно населено място трябва да има поне 100 жители с
+            постоянен адрес за да се провеждат избори за кмет.
           </h2>
         </li>
         <li className="gap-y-2 flex flex-col text-2xl bg-green-100 rounded-md text-green-900 p-3">
