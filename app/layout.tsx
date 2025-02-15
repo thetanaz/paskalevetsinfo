@@ -1,10 +1,9 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import SnowfallComponent from "@/components/SnowFall";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Oswald } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/Footer";
-import { Analytics } from "@vercel/analytics/react";
 
 const oswald = Oswald({
   subsets: ["cyrillic", "latin"],
@@ -27,7 +26,8 @@ export default function RootLayout({
       <body
         className={`${oswald.className} flex flex-col min-h-screen h-full antialiased bg-green-900 text-white`}
       >
-        <SnowfallComponent />
+        {/*Enable snowfall component next winter */}
+        {/* <SnowfallComponent /> */}
 
         <Navbar />
         <div className="flex-1">{children}</div>
