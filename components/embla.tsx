@@ -79,12 +79,7 @@ export const Embla: React.FC<EmblaProps> = ({ images }) => {
       >
         <div className="flex h-full">
           {images.map((img, idx) => (
-            <div
-              key={idx}
-              className={`flex-[0_0_100%] relative ${
-                isExpanded ? "w-full h-full" : "w-full h-full"
-              }`}
-            >
+            <div key={idx} className={`flex-[0_0_100%] relative w-full h-full`}>
               <Image
                 priority={idx === 0}
                 fill

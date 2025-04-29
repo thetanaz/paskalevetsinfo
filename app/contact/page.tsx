@@ -25,7 +25,7 @@ const Page = () => {
           </h2>
         </div>
 
-        <div className="flex  p-2 rounded-md border w-[400px] flex-col gap-y-4">
+        <div className="flex  p-2 rounded-md border w-[400px]  flex-col gap-y-4">
           <img
             src="https://res.cloudinary.com/dwshro2zn/image/upload/v1739191218/kmet-paskalevec_se8yza.jpg"
             alt="building"
@@ -57,6 +57,20 @@ const Page = () => {
                   orach1898@abv.bg
                 </Link>
               </p>
+            </div>
+          </h2>
+        </div>
+        <div className="flex  p-2 rounded-md border w-[400px] flex-col gap-y-4">
+          {" "}
+          <img
+            src="https://res.cloudinary.com/dwshro2zn/image/upload/v1745943797/doktor_sqnavp.jpg"
+            alt="building"
+            className="rounded-md max-w-[400px]"
+          />
+          <h2 className="text-xl flex flex-col font-bold">
+            д-р Албена Банкова - съдов хирург
+            <div className="flex justify-between items-end w-full mb-1">
+              <a href="tel:0878351445">тел. 0878351445</a>
             </div>
           </h2>
         </div>
