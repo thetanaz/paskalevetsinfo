@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="w-full flex items-center mt-0 sm:mt-2 px-4 my-2">
+    <div className="w-full flex items-center mt-0 sm:mt-2 px-4 justify-center my-2">
       <main className="flex flex-col gap-y-2 mx-auto items-center max-w-7xl">
         <h1 className="text-center text-2xl font-medium px-4">
           Добре дошли в официалния сайт на село Паскалевец , община Павликени.
@@ -36,7 +36,7 @@ export default function Home() {
               allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
               allowFullScreen
               height="605"
-              width="405"
+              width="400"
             ></iframe>
           </div>
         </div>
