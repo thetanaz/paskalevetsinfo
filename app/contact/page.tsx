@@ -1,5 +1,6 @@
 import Title from "@/components/Title";
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -13,10 +14,12 @@ const Page = () => {
       <div className="flex flex-col items-center my-2">
         <div className="w-full xl:max-w-screen-xl xl:mx-auto grid grid-cols-1 gap-y-5 xl:grid-cols-2  xl:items-center justify-items-center">
           <div className="flex p-2 flex-col gap-y-4 border rounded-md w-full max-w-[400px] h-[400px] max-h-[400px]">
-            <img
+            <Image
               src="https://res.cloudinary.com/dwshro2zn/image/upload/v1739190318/kmetstvo_inftvx.jpg"
               alt="building"
-              className="rounded-md w-full"
+              className="rounded-md w-full object-cover object-center"
+              width={300}
+              height={300}
             />
             <h2 className="text-xl flex flex-col font-bold">
               Кметство{" "}
@@ -26,12 +29,19 @@ const Page = () => {
             </h2>
           </div>
 
-          <div className="flex p-2 flex-col gap-y-4 border rounded-md w-full max-w-[400px] max-h-[400px]">
-            <img
-              src="https://res.cloudinary.com/dwshro2zn/image/upload/v1739191218/kmet-paskalevec_se8yza.jpg"
-              alt="building"
-              className="rounded-md w-full overflow-hidden object-cover object-top"
-            />
+          <div className="flex p-2 flex-col gap-y-4 border rounded-md w-full max-w-[400px] h-[400px] max-h-[400px]">
+            <div className="h-[280px] overflow-hidden rounded-md">
+              {" "}
+              {/* Fixed height container */}
+              <Image
+                src="https://res.cloudinary.com/dwshro2zn/image/upload/v1739191218/kmet-paskalevec_se8yza.jpg"
+                alt="building"
+                className="rounded-md w-full h-full object-cover object-center"
+                width={300}
+                height={300}
+                style={{ objectPosition: "20% 20%" }}
+              />
+            </div>
             <h2 className="text-xl flex flex-col font-bold">
               Кметски наместник - Мирослав Димитров{" "}
               <a href="tel:0894506130">тел. 0894506130</a>
@@ -39,10 +49,12 @@ const Page = () => {
           </div>
 
           <div className="flex p-2 flex-col gap-y-4 border rounded-md w-full max-w-[400px] h-[400px] max-h-[400px]">
-            <img
+            <Image
               src="https://res.cloudinary.com/dwshro2zn/image/upload/v1739190714/chitalishte_crji5g.jpg"
               alt="building"
-              className="rounded-md w-full"
+              className="rounded-md w-full object-cover object-center"
+              width={300}
+              height={300}
             />
             <h2 className="text-xl flex flex-col font-bold">
               Читалище
@@ -61,11 +73,13 @@ const Page = () => {
             </h2>
           </div>
 
-          <div className="flex p-2 flex-col gap-y-4 border rounded-md w-full max-w-[400px] h-[400px] max-h-[400px] justify-center">
-            <img
+          <div className="flex p-2 flex-col gap-y-4 border rounded-md w-full max-w-[400px] h-[400px] max-h-[400px]">
+            <Image
               src="https://res.cloudinary.com/dwshro2zn/image/upload/v1745943797/doktor_sqnavp.jpg"
               alt="building"
-              className="rounded-md w-full"
+              className="rounded-md w-full object-cover object-center"
+              width={300}
+              height={300}
             />
             <h2 className="text-xl flex flex-col font-bold">
               д-р Албена Банкова - съдов хирург
